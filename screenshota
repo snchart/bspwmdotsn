@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scrot -s -e 'mv $f ~/Screenshots/' &&  notify-send -t 3768 -i /home/snchart/newfile/kora-master/kora-light/actions/symbolic/xapp-prefs-preview-symbolic.svg 'SCROT' 'screenshot taked...'
