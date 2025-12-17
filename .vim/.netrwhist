@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/snchart/.vim/plugged/vim-airline/autoload/airline/themes'
+let g:netrw_dirhist_5='/home/snchart/.vim/plugged/vim-airline-themes/autoload/airline/themes'
+let g:netrw_dirhist_4='/home/snchart/.vim/plugged/vim-airline-themes/autoload/airline'
+let g:netrw_dirhist_3='/home/snchart/.vim/plugged/vim-airline-themes/autoload'
+let g:netrw_dirhist_2='/home/snchart/.vim/plugged/vim-airline-themes/autoload/airline/themes'
+let g:netrw_dirhist_1='/home/snchart/.vim/plugged/vim-airline-themes/autoload/airline'
+let g:netrw_dirhist_0='/home/snchart/.vim/plugged/vim-airline-themes/autoload'
+let g:netrw_dirhist_9='/home/snchart/bspwmdotsn/tmux/plugins/tmux-gruvbox/src'
+let g:netrw_dirhist_8='/home/snchart/.vim/plugged'
+let g:netrw_dirhist_7='/home/snchart/qfetch'

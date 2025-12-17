@@ -1,0 +1,71 @@
+* {
+    modes: [ combi ];
+    combi-modes: [ window, drun, run ];
+    font: "JetBrainsMono Nerd Font SemiBold 13";
+    background-color: #121212;
+    text-color: #fdfdfd;
+    columns: 1;
+}
+
+window {
+    anchor: center;
+    children: [ mainbox ];
+    border: 4px;
+    border-color: #121212;
+    width: 750px;
+    border-radius: 5px;
+    transparency: "screenshot";
+}
+
+mainbox {
+    background-color: #121212;
+    children: [ inputbar, listview ];
+}
+
+listview {
+    layout: vertical;
+    spacing: 2px;
+//    background-color: #121212;
+}
+
+element {
+    orientation: horizontal;
+    children: [ element-icon, element-text ];
+    padding: 0px 10px 0px 10px;
+}
+
+element-icon {
+    size: 20px;
+    padding: 0px 7px 0px 0px;
+    background-color: inherit;
+}
+
+element.selected {
+    background-color: #1f1f1f;
+    border-radius: 9px;
+}
+
+button {
+    content: "Search: ";
+    text-color: #fdfdfd;
+    expand: false;
+}
+
+entry {
+//    placeholder: "Type to search";
+    text-color: #fdfdfd;
+    expand: true;
+}
+
+element-text {
+    text-color: #fdfdfd;
+    background-color: inherit;
+    padding: 2px;
+}
+
+inputbar {
+    children: [ button,entry ];
+    padding: 5px;
+}
+
+
