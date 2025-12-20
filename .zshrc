@@ -6,4 +6,4 @@ plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-PROMPT='  %B%F{#525252}%~ %f%b%f> '
+PROMPT=' %F{#a1a181}$(id -un)@$(hostname)%f %B%F{#525252}%~ %f%b%f> '
