@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:style=Bold:pixelsize=22:antialias=true:autohint=false";
-static int borderpx = 3;
+static char *font = "JetBrains Mono:style=Bold:pixelsize=21:antialias=true:autohint=false";
+static int borderpx = 7;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -117,9 +117,9 @@ static const char *colorname[] = {
 
 	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
+	/* bg and fg */
 	"#cccccc",
-	"#0e0e0e",
+	"#0a0a0a",
 	"#d7d3b4", /* default foreground colour */
 	"#0e0e0e", /* default background colour */
 };

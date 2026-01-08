@@ -5,7 +5,7 @@ wifi(){
     if echo "$SSID" 2>/dev/null | grep -qi "HUAWEI"; then
          echo " HUAWEI "
     elif [ -n "$SSID" ]; then
-         echo " $SSID "
+         echo "‎ ‎ $SSID "
     else
          echo ""
     fi

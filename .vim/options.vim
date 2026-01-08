@@ -14,3 +14,11 @@ set smartindent
 set laststatus=1
 
 set nofoldenable
+
+augroup Mkdir
+    autocmd!
+    autocmd BufWritePre *
+                \ if !isdirectory(expand("<afile>:p:h")) |
+                \   call mkdir(expand("<afile>:p:h"), "p") |
+                \ endif
+augroup END
