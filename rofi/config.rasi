@@ -1,13 +1,2 @@
-// @theme "~/.local/share/rofi/themes/arc_dark_transparent_colors.rasi"
-
-//@theme "/usr/share/rofi/themes/Monokai.rasi"
-
-//@theme "/usr/share/rofi/themes/dmenu2.rasi"
-
-//@theme "/home/snchart/.config/rofi/themes/duse.rasi"
-
-//@theme "/home/snchart/.config/rofi/themes/qaen.rasi"
-
-//@theme "/home/snchart/.config/rofi/themes/duse.rasi"
 
 @theme "/home/snchart/.config/rofi/themes/qaen.rasi"

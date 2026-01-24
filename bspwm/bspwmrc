@@ -1,9 +1,5 @@
 #! /bin/sh
 
-if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
-    export $(dbus-launch --sh-syntax --exit-with-session)
-fi
-
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d 1 2 3 4 5 6 7
@@ -22,7 +18,10 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle" &
+xsetroot -cursor_name left_ptr &
+
 /home/snchart/.config/polybar/launch.sh &
 /home/snchart/.fehbg &
-udiskie &
+picom -b &
 dunst &

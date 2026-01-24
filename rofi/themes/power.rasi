@@ -1,0 +1,52 @@
+* {
+    font: "JetBrainsMono Nerd Font SemiBold 20";
+    background-color: #101010;
+    text-color: #fdfdfd;
+    columns: 1;
+}
+
+window {
+    anchor: center;
+    children: [ mainbox ];
+    border: 10px;
+    border-color: #101010;
+    width: 367px;
+    border-radius: 40px;
+    transparency: "screenshot";
+}
+
+mainbox {
+    background-color: #101010;
+    children: [ listview ];
+}
+
+listview {
+    layout: horizontal;
+    spacing: 10px;
+//    background-color: #121212;
+}
+
+element {
+    orientation: horizontal;
+    children: [ element-text ];
+    padding: 10px 10px 10px 10px;
+}
+
+element.selected {
+    background-color: #252525;
+    border-radius: 35px;
+
+}
+
+element.normal {
+    background-color: #1a1a1a;
+    border-radius: 55px;
+}
+
+
+element-text {
+    text-color: #fdfdfd;
+    background-color: inherit;
+    padding: 20px;
+}
+

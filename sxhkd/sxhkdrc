@@ -10,7 +10,7 @@ Print + shift
 
 # terminal emulator
 super + Return
-	st
+	alacritty
 
 # program launcher
 super + d
@@ -21,7 +21,10 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 super + End
-    poweroff
+    doas poweroff
+
+super + alt + r 
+    alacritty -e vim todo.txt
 
 super + shift + t
     thunar
@@ -38,7 +41,7 @@ super + shift + r
 	bspc wm -r
 
 super + r
-    reboot
+    doas reboot
 
 # close and kill
 super + q
@@ -75,7 +78,7 @@ super + {a,@space,f}
 	bspc node -t {tiled,floating,fullscreen}
 
 super + shift + Return
-    st -e tmux
+    alacritty -e tmux
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -108,7 +111,7 @@ super + i
 
 # run thunar
 super + t
-        st -e ranger
+        alacritty -e ranger
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -150,6 +153,6 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# Audiorelay
+# powermenu
 super + p
-	pavucontrol
+    sh .config/rofi/scripts/powermenu.sh
