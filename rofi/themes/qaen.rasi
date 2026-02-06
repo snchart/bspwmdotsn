@@ -1,7 +1,7 @@
 * {
     modes: [ combi ];
     combi-modes: [ window, drun, run ];
-    font: "JetBrainsMono Nerd Font SemiBold 13";
+    font: "JetBrainsMono Nerd Font SemiBold 14";
     background-color: #121212;
     text-color: #fdfdfd;
     columns: 1;
@@ -13,6 +13,7 @@ window {
     border: 4px;
     border-color: #121212;
     width: 750px;
+    height: 480px;
     border-radius: 5px;
     transparency: "screenshot";
 }
@@ -31,7 +32,7 @@ listview {
 element {
     orientation: horizontal;
     children: [ element-icon, element-text ];
-    padding: 0px 10px 0px 10px;
+    padding: 0px 14px 0px 14px;
 }
 
 element-icon {
@@ -41,8 +42,8 @@ element-icon {
 }
 
 element.selected {
-    background-color: #1f1f1f;
-    border-radius: 9px;
+    background-color: #2f2f2f;
+    border-radius: 20px;
 }
 
 button {

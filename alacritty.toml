@@ -19,11 +19,11 @@ white = "#a89984"
 yellow = "#d79921"
 
 [colors.primary]
-background = "#111111"
+background = "#101010"
 foreground = "#d7d3b4"
 
 [font]
-size = 9.4
+size = 9.1
 
 [font.bold]
 family = "JetBrains Mono"
