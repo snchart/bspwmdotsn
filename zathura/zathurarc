@@ -1,0 +1,16 @@
+set default-bg          "#0e0e0e"
+set default-fg          "#d0d0d0"
+
+set recolor             "true"
+set recolor-keephue     "false"
+set recolor-darkcolor   "#d0d0d0"
+set recolor-lightcolor  "#0e0e0e"
+
+set completion-group-bg "#0e0e0e"
+set completion-group-fg "#d0d0d0"
+
+set statusbar-bg        "#0e0e0e"
+set statusbar-fg        "#d0d0d0"
+
+map = zoom in
+
